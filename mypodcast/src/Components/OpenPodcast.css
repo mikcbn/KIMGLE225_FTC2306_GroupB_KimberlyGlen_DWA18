@@ -38,7 +38,7 @@
 
 /* Apply the dark grey background and white font color to the entire page */
 body {
-    background-color: pink;
+    background-color:#60495A ;
     font-size: small;
     font-family: 'Oxygen';
 }

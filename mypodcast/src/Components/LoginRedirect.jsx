@@ -5,14 +5,16 @@ import supabase from '../supabase'; // Import the Supabase client instance
 export default function ProtectedApp({ component: Component, ...rest }) {
   const [user, setUser] = useState(null);
 
-  useEffect(() => {
-    // Fetch the user object from Supabase when the component mounts
-    const fetchUser = async () => {
-      const currentUser = supabase.auth.user();
-      setUser(currentUser);
-    };
-    fetchUser();
-  }, []); // The empty dependency array ensures that this effect runs only once
+useEffect(() => {
+  // Fetch the user object from Supabase when the component mounts
+  const fetchUser = async () => {
+    const currentUser = supabase.auth.user();
+    console.log('Current User:', currentUser);
+    setUser(currentUser);
+  };
+  fetchUser();
+}, []);
+ // The empty dependency array ensures that this effect runs only once
 
   return (
     <Route

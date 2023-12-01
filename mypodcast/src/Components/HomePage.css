@@ -3,6 +3,7 @@
     padding: 20px;
     color: #283135;
     font-size: small;
+    background-color:#3F3244;
 }
 
 .sort-search-container {
@@ -70,7 +71,7 @@
     align-items: center;
     justify-content: center;
     /* Centers the content vertically */
-    background-color: #6A6758;
+    background-color: #2F2A32;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
