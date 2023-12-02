@@ -4,6 +4,7 @@ import axios from 'axios';
 import MiniPlayer from './MiniPlayer';
 import Carousel from './Carousel';
 
+
 const genreMapping = {
   1: 'Personal Growth',
   2: 'True Crime and Investigative Journalism',

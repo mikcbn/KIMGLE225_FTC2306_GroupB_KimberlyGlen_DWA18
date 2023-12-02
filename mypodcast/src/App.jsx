@@ -8,7 +8,6 @@ import FavouritesPage from "./Components/FavouritesPage";
 import Episode from "./Components/Episode";
 import MiniPlayer from "./Components/MiniPlayer";
 
-
 export default function App() {
   const [favouritePodcasts, setFavouritePodcasts] = useState([]);
   const [miniPlayerData, setMiniPlayerData] = useState(null);
