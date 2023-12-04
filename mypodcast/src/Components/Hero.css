@@ -1,6 +1,7 @@
 /* Hero.css */
 .hero {
     background-image: url('../Images/HeaderBlackAndWhite.jpg');
+    max-width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     color: #CC6129;
@@ -20,4 +21,14 @@
     font-size: 1rem;
     margin-top: 10px;
     font-family: 'Comfortaa', sans-serif;
+}
+
+/* Normal screens */
+@media screen and (min-width: 768px) {
+    /* Your styles for larger screens */
+}
+
+/* Smaller screens, e.g., iPhone SE */
+@media screen and (max-width: 320px) {
+    /* Your styles for smaller screens */
 }

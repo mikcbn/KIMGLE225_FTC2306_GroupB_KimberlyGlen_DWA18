@@ -164,3 +164,13 @@
     background-color: #283135;
     font-family: 'Comfortaa', sans-serif;
 }
+
+/* Normal screens */
+@media screen and (min-width: 768px) {
+    /* Your styles for larger screens */
+}
+
+/* Smaller screens, e.g., iPhone SE */
+@media screen and (max-width: 320px) {
+    /* Your styles for smaller screens */
+}

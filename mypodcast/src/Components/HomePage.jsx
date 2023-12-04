@@ -221,6 +221,6 @@ const handleShowMiniPlayer = (podcast) => {
       )}
     </div>
   );
-};
+});
 
 export default HomePage;

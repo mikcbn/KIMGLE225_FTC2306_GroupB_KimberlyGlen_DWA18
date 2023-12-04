@@ -22,7 +22,7 @@ const SortingDropdown = ({ sortOption, onSortChange }) => {
 
   return (
     <div>
-      <h1 className='favourite-page-heading'>Favourites Page</h1>
+      <h1 className='favourite-page-heading'>Your Favourites</h1>
       <div className="container">
         {sortedPodcasts.map((podcast) => (
           <div key={podcast.id} className="podcast-item">

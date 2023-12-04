@@ -61,3 +61,13 @@
     background-image: url('../Images/Previous.png');
     /* Adjust the path accordingly */
 }
+
+/* Normal screens */
+@media screen and (min-width: 768px) {
+    /* Your styles for larger screens */
+}
+
+/* Smaller screens, e.g., iPhone SE */
+@media screen and (max-width: 320px) {
+    /* Your styles for smaller screens */
+}
