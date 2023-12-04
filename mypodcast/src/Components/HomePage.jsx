@@ -39,6 +39,8 @@ useEffect(() => {
           podcast.genre.length > 0 &&
           typeof podcast.genre[0] === 'number';
 
+      /* Genre not working
+      
         const genreTitle = validGenres
           ? genreMapping[podcast.genre[0]] || 'Unknown Genre'
           : 'Unknown Genre';
@@ -48,7 +50,7 @@ useEffect(() => {
           genre: genreTitle,
         };
       });
-
+      */
       setPodcasts(podcastsData);
     })
     .catch((error) => {
