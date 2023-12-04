@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
 
+
 export default function Header() {
     return (
         <div className='hero'>

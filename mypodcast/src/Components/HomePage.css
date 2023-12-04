@@ -59,6 +59,11 @@
     /* Include padding and border in the width */
 }
 
+.genres--container {
+    position: relative;
+    top: -20px;
+}
+
 .podcasts-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

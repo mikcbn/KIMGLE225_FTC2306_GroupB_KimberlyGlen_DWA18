@@ -5,31 +5,20 @@ import './FavouritesPage.css';
 export default function FavouritesPage({ favouritePodcasts }) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [sortedPodcasts, setSortedPodcasts] = useState(favouritePodcasts);
-  const [sortOption, setSortOption] = useState('a-z');
+const SortingDropdown = ({ sortOption, onSortChange }) => {
+  return (
+    <div>
+      <label>Sort By: </label>
+      <select value={sortOption} onChange={(e) => onSortChange(e.target.value)}>
+        <option value="a-z">A-Z</option>
+        <option value="z-a">Z-A</option>
+        <option value="date-asc">Oldest-Newest</option>
+        <option value="date-desc">Newest-Oldest</option>
+      </select>
+    </div>
+  );
+};
 
-  const toggleExpansion = () => {
-    setIsExpanded(!isExpanded);
-  };
-
-  const handleSort = (option) => {
-    setSortOption(option);
-    switch (option) {
-      case 'a-z':
-        setSortedPodcasts([...favouritePodcasts].sort((a, b) => a.title.localeCompare(b.title)));
-        break;
-      case 'z-a':
-        setSortedPodcasts([...favouritePodcasts].sort((a, b) => b.title.localeCompare(a.title)));
-        break;
-      case 'date-asc':
-        setSortedPodcasts([...favouritePodcasts].sort((a, b) => new Date(a.updated) - new Date(b.updated)));
-        break;
-      case 'date-desc':
-        setSortedPodcasts([...favouritePodcasts].sort((a, b) => new Date(b.updated) - new Date(a.updated)));
-        break;
-      default:
-        break;
-    }
-  };
 
   return (
     <div>
@@ -67,4 +56,5 @@ export default function FavouritesPage({ favouritePodcasts }) {
     </div>
   );
 }
+
 
